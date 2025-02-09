@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaSecretss</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="offers.html">Some Offers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#career">Careers</a>
+    </nav>
+
+    <section id="about" class="section">
+        <h1>About Pizza Secret</h1>
+        <div class="container">
+            <p>Pizza is an Italian food that was created in Italy (The Naples area). It is made with different toppings. Some of the most common toppings are cheese, sausages, pepperoni, vegetables, tomatoes, spices and herbs and basil. These toppings are added over a piece of bread covered with sauce.<br> The sauce is most often tomato-based, but butter-based sauces are used, too. The piece of bread is usually called a "pizza crust". Almost any kind of topping can be put over a pizza. The toppings used are different in different parts of the world. Pizza comes from Italy from Neapolitan cuisine. However, it has become popular in many parts of the world.<br>
+            Meet our talented pizza team! Our chefs craft each pizza with passion and expertise. Every hand-tossed crust and thoughtfully chosen topping makes each visit a journey through the artistry of authentic Italian pizza.</p>
+            <img src="images/about.jpg" alt="about">
+        </div>
+    </section>
+
+    <section id="career" class="section">
+        <h1>Join Our Team</h1>
+        <p>If you’d like to be part of our team, fill out this form:</p>
+        <form id="careerForm" enctype="multipart/form-data">          
+            <label for="name2">Name:</label>
+            <input type="text" id="name2" name="name" required><br>
+
+            <label for="birthday2">Birthdate:</label>
+            <input type="date" id="birthday2" name="birthday" required><br>
+
+            <label for="phone2">Phone:</label>
+            <input type="tel" id="phone2" name="phone" required><br> 
+
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="email" required><br>
+
+            <label>Position:</label><br>
+            <input type="radio" id="cheff" name="title" value="cheff">
+            <label for="cheff">Chef</label>
+
+            <input type="radio" id="waiter" name="title" value="waiter">
+            <label for="waiter">Waiter</label>
+
+            <input type="radio" id="delivery" name="title" value="delivery">
+            <label for="delivery">Delivery</label><br><br>
+
+            <input type="submit" id="submit">
+            <input type="reset" id="reset">
+        </form>
+</section>
+<section id="contact" class="section">
+    <header><h1>Thank you for dining with us!</h1></header>
+    <div id="allcontent">
+    <div class="info-container">
+    <p>📍Location: First branch: Qaem - 71 279 452 - 70 866 538<br>
+    Second branch: Ras Beirut Near Karakas Pharmacy - 76 302 077</p>
+    <p>📧 Email:<a href="mailto:Pizzasecret@gmail.com"> OUR EMAIL </a></p>
+    <p>📅 Opening Time: <br><br> Monday-Saturday: 10am - 12am | Sunday: Closed</p>
+    <p>Follow us:<a href="https://instagram.com/pizza_secretss" target="_blank"> INSTAGRAM |<a href="https://facebook.com/Pizza secrets" target="_blank"> FACEBOOK </a></p>
+    </div>
+
+    <div class="form-container">
+        <p>Please take a moment to write your feedback below:</p>
+             <form id="addItemForm">
+                <label for="name">* Name: </label>
+                    <input type="text" name="namey" id="name" minlength="4" maxlength="15" required><br>
+                    
+                    <label for="email">* Email: </label>
+                    <input type="email" name="emaili" id="email" required><br>
+            
+                    <label for="feedback">* Feedback: </label>
+                    <textarea  id="feedback" name="feedbacky" cols="25" rows="2" required></textarea>
+                    
+                    <br><input type="submit" id="submit">
+            </form>
+            </div>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li>Lebanon's most popular quick service restuarant chain since 1996</li>
+        <li>Qaem: 71 279 452 - 70 866 538</li>
+            <li>Ras Beirut Near Karakas Pharmacy: 76 302 077</li>
+            <li>connect with us:<br><a href="https://instagram.com/pizza_secretss" target="_blank">Instagram: @pizza_secretss </a>&nbsp;
+                <a href="https://facebook.com/pizza secret" target="_blank"> Facebook: pizzasecrets
+                </a>
+        </li></ul><hr>
+        <p>copyright 2020-24 All rights reserved.</p>
+    
+</footer>
+
+<script>
+    document.getElementById("careerForm").addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("✅ Thank you for applying! We will contact you soon.");
+    document.getElementById("careerForm").reset();
+    });
+    window.onload = () => {
+    document.getElementById("addItemForm").addEventListener("submit",
+        (event) => {
+            event.preventDefault()
+            alert("Thank you for your feedback!");
+            document.getElementById("addItemForm").request();
+        }
+    );
+};
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/delivery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    height: 82vh;
+    padding-left: 30px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 10px 15px;
+    color:brown;
+    text-align: center;
+
+}
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: hsla(0, 0%, 100%, 0.664);
+}
+
+nav {
+    text-align: center;
+    padding: 2em;
+}
+nav :hover{
+    font-size: 20px;
+
+}
+
+nav a {
+    color: hsl(5, 52%, 36%);
+    font-weight: bold;
+    background-color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+#hero {
+    padding-left: 33em;
+}
+
+#hero a {
+    background-color: hsl(5, 46%, 39%);
+    color: hsl(0, 14%, 90%);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#hero a:hover {
+        background-color: hsl(5, 66%, 36%);
+        font-size: 25px;
+    }

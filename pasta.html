@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaSecretss</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <button>Menu ▼</button>
+                <div class="content">
+                    <a href="Menu.html">Pizza</a>
+                    <a href="pasta.html">Pasta</a>
+                    <a href="starters.html">Starters, Drinks, Dips,<br> Extra toppings</a>
+                </div>
+            </li>
+            <li><a href="offers.html">Some Offers</a></li>
+            <li><a href="About.html#about">About</a></li>
+            <li><a href="About.html#career">Career</a></li>
+            <li><a href="About.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header><h1>Delicious Pasta Menu</h1></header>
+    <main class="box2">
+    <div class="gallery">
+        <div class="image">
+    <img src="images/alfredopasta.avif" alt="fettuccine alfredo">
+    <p class="caption2">FETTUCCINE ALFREDO</p>
+    <h4>Cooked with sauteed chicken mushroom creamy sauce, garlic oil & parmesan cheese</h4>
+    <div id="price">11.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/chickenresto.jpg" alt="chickenresto">
+    <p class="caption2">FUSHILLI CHICKEN RESTO</p>
+    <h4>Cooked with cherry tomatoes fresh mushroom, pine seeds parmesan cheese, basil & creamy sauce</h4>
+    <div id="price">11.0$</div>
+    </div>
+    
+    <div class="image">
+    <img src="images/italian.avif" alt="italian">
+    <p class="caption2">ITALIAN PENNE</p>
+    <h4>Cooked with pesto sauce white sauce & red sauce</h4><br>
+    <div id="price">11.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/arrabiatta.webp" alt="pennepasta">
+    <p class="caption2">PENNE ALL ARRABBIATA</p>
+    <h4>Cooked with garlic olive oil basil, cherry tomatoes & spicy tomato sauce</h4>
+    <br>
+    <div id="price">9.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/carbonara.png" alt="FUSHILLI CARBONARA">
+    <p class="caption2">FUSHILLI CARBONARA</p>
+    <h4>Cooked with creamy mushroom sauce, parmesan cheese beef bacon & black pepper</h4>
+    <div id="price">11.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/swiss.png" alt="SWISS MUSHROOM PENNE">
+    <p class="caption2">SWISS MUSHROOM PENNE </p>
+    <h4>Cooked with beef bacon Sauteed mushroom, our creamy spcial sauce & covered with melted swiss cheese</h4>
+    <div id="price">11.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/pomodoro.jpg" alt="PONMODORO">
+    <p class="caption2">PENNE PONMODORO</p>
+    <h4>Cooked with garlic olive oil basil, cherry tomatoes, tomato sauce, tpped with parmesan & mozzarella cheese</h4>
+    <div id="price">11.0$</div>
+    </div>
+
+    <div class="image">
+    <img src="images/4cheese.jpg" alt="4cheese">
+    <p class="caption2">PENNE FOUR CHEESE</p>
+    <h4>Cooked with creamy sauce gruyere, parmesan cheese blue cheese & mozzarella cheese</h4>
+    <div id="price">10.0$</div>
+    </div>
+    </div>
+    
+    <h2>ORDER HERE</h2>
+    <div id="ALLorder">
+    <form action="index.php" method="POST" name="addItemForm" id="addItemForm" enctype="multipart/form-data">          
+        <label for="name">Pasta Name</label>
+        <select id="name" name="name">
+            <option value="" disabled selected>--Select--</option>
+            
+            <option value="ALFREDO">FETTUCCINE ALFREDO</option>
+            <option value="RESTO">FUSHILLI CHICKEN RESTO</option>
+            <option value="italian">ITALIAN PENNE</option>
+            <option value="PENNE">PENNE ALL ARRABBIATA</option>
+            <option value="carbonara">FUSHILLI CARBONARA</option>
+            <option value="mushroom">SWISS MUSHROOM PENNE</option>
+            <option value="pomodoro">PENNE PONMODORO</option>
+            <option value="cheese">PENNE FOUR CHEESE</option>
+        </select><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="0"><br>
+       
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" name="phone"><br> 
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your address"><br>
+
+        <input type="submit" id="submit">
+        <input type="reset" id="reset">
+    </form>
+    <div id="result">
+        <h2>YOUR ORDER: </h2>
+        <dl id="order"></dl>
+    </div>
+    </div>
+</main>
+    
+<footer>
+    <ul>
+        <li>Lebanon's most popular quick service restuarant chain since 1996</li>
+        <li>Qaem</li>
+        <li>71 279 452 - 70 866 538</li>
+        <li>Ras Beirut Near Karakas Pharmacy </li>
+        <li>76 302 077</li>
+        <li>connect with us:<br><a href="https://instagram.com/pizza_secretss" target="_blank">Instagram: @pizza_secretss </a>&nbsp;
+            <a href="https://facebook.com/pizza secret" target="_blank"> Facebook: pizzasecrets
+            </a>
+        </li><hr>
+        <li>copyright 2020-24 All rights reserved.</li>
+    </ul>
+</footer>
+<script>
+const pastaPrices = {
+    "FETTUCCINE ALFREDO": 11,
+    "FUSHILLI CHICKEN RESTO": 11,
+    "ITALIAN PENNE": 11,
+    "PENNE ALL ARRABBIATA": 9,
+    "FUSHILLI CARBONARA": 11,
+    "SWISS MUSHROOM PENNE": 11,
+    "PENNE PONMODORO": 11,
+    "PENNE FOUR CHEESE": 10,
+};
+
+function addItem(name, quantity, phone, location, price) {
+    const dl = document.getElementById("order");
+
+    const dtName = document.createElement("dt");
+    dtName.innerText = ` 🍝 Pasta: ${name}`;
+    const ddQuantity = document.createElement("dd");
+    ddQuantity.innerText = ` 📦 Quantity: ${quantity}`;
+    const ddPhone = document.createElement("dd");
+    ddPhone.innerText = ` 📞 Phone: ${phone}`;
+    const ddLocation = document.createElement("dd");
+    ddLocation.innerText = ` 📍 Location: ${location}`;
+    const ddPrice = document.createElement("dd");
+    ddPrice.innerText = ` 💰 Total Price: $${price}`;
+
+    dl.appendChild(dtName);
+    dl.appendChild(ddQuantity);
+    dl.appendChild(ddPhone);
+    dl.appendChild(ddLocation);
+    dl.appendChild(ddPrice);
+}
+
+window.onload = () => {
+    document.getElementById("addItemForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        const name = document.getElementById("name").value;
+        const quantity = document.getElementById("quantity").value;
+        const phone = document.getElementById("phone").value;
+        const location = document.getElementById("location").value;
+
+        if(name == "Enter A Pasta"){
+            alert("🔺Choose the of pasta");
+            return;
+        }
+
+        if(quantity == 0){
+            alert(`🔺how many ${name} pizza do you want`);
+            return;
+        }
+
+        if (!phone || !location) {
+            alert("🔺Please enter both phone number and location!");
+            return;
+        }
+        const pricePerPasta = pastaPrices[name] || 10;
+        const totalPrice = pricePerPasta * quantity;
+
+        addItem(name, quantity, phone, location, totalPrice);
+
+        alert(`✅ Your order:\ 🍝Pasta: ${name}\n📦Quantity: ${quantity}\n📞Phone: ${phone}\n📍Location: ${location}\n💰Total Price: $${totalPrice}`);
+
+        document.getElementById("addItemForm").reset();
+    });
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: rgb(10, 10, 9);
+}
+nav {
+    text-align: center;
+    padding: 2em;
+}
+nav :hover {
+    font-size: 20px;
+}
+nav a {
+    color: hsl(0, 39%, 39%);
+    font-weight: bold;
+    background-color: hsl(0, 2%, 68%);
+    text-decoration: none;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+.offer img {
+    width:75%;
+    height: 400px;
+    border-radius: 10px;
+    margin:30px 110px; 
+}
+.offer {
+    position:relative;
+    width:80%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #b8b5b5;
+    color: hsl(0, 39%, 39%);;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+footer ul{
+    background-color: #b8b5b5;
+    padding-bottom: 5px;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+#box {
+    background-color: burlywood;
+    max-height: 450px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+#box ul{
+    color: hsl(0, 39%, 39%);
+    font-weight: bold;
+    padding: 15px 40px;
+    margin: 1px 100px;
+    display: block;
+}
+#box p{
+    font-size: 40px;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color:azure;
+    padding: 15px;
+}
+#box li{
+    list-style-type: none;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 7px 2px;
+}
+#caption{
+display: flex;
+}

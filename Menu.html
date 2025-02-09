@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaSecretss</title>
+    <link rel="stylesheet" href="style3.css">
+</head> 
+<body>
+    <header>
+        <h1>Delicious Pizza Menu</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <button>Menu ▼</button>
+                <div class="content">
+                    <a href="Menu.html">PIZZA</a>
+                    <a href="pasta.html">PASTA</a>
+                    <a href="starters.html">STARTERS, DRINKS, DIPS,<br> EXTRA TOPPINGS</a>
+                </div>
+            </li>
+            <li><a href="offers.html">Some Offers</a></li>
+            <li><a href="About.html#about">About</a></li>
+            <li><a href="About.html#career">Career</a></li>
+            <li><a href="About.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pagination">
+        <a href="#perfection">PERFECTION</a>
+        <a href="#traditional">TRADIONAL</a>
+        <a href="#lebanese">LEBANESE</a></div>
+
+        <div id="#perfection" class="image-box">
+            <h2>PIZZA PERFECTION</h2>
+            <div class="image-item">
+                <img  src="images/chicken.jpg" alt="chicken alfredo">
+                <p class="caption">CHICKEN ALFREDO</p>
+                <h4>Alfredo sauce, grilled chicken pepper, fresh mushroom parmesan & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 12$</h3>
+            </div>
+
+            <div class="image-item">
+                <img src="images/bbq.jpg" alt="BBQ">
+                <p class="caption">BBQ CHICKEN</p>
+                <h4>Tomato & bbq sauces, grilled chicken, pepper, fresh mushroom, cheddar & ozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 12$</h3>
+                     
+            </div>
+
+            <div class="image-item">
+                <img src="images/supreme.webp" alt="supreme">
+                <p class="caption">SUPREME</p>
+                <h4>Tomato sauce, smoked beef bacon, pepperoni, pepper, fresh mushroom, olives, mix of 2 cheeses & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 12$</h3>
+            </div>
+
+            <div class="image-item">
+                <img src="images/truffle.avif" alt="truffle">
+                <p class="caption">TRUFFLE</p>
+                <h4>Truffle sauce, fresh mushroom parmesan & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 12$</h3>
+            </div>
+        </div>
+
+        <div id="traditional" class="image-box">
+            <h2>TRADITIONAL PIZZA</h2>
+            <div class="image-item2">
+                <img src="images/margarita.jpg" alt="margerrita">
+                <p class="caption2">MARGARITA</p>
+                <h4>Tomato sauce, oregano & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 11$</h3>
+            </div>
+
+            <div class="image-item2">
+                <img src="images/pepperoni.jpg" alt="pepperoni">
+                <p class="caption2">PEPPERONI</p>
+                <h4>Tomato sauce, peperoni & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 11$</h3>
+            </div>
+
+            <div class="image-item2">
+                <img src="images/vegetarian.jpg" alt="vegetarian">
+                <p class="caption2">VEGETERIAN</p>
+                <h4>Tomato sauce, pepper, onion, fresh mushroom, olive, cherry tomatoes, sweet corn & mozzarella cheese</h4>
+                <h3>Medium: 10$  Large: 11$</h3>
+            </div>
+        </div>
+        <div id="lebanese" class="image-box">
+            <h2>LEBANESE PIZZA</h2>
+            <div class="image-item2">
+                <img src="images/lebanese.jpg" alt="labanese">
+                <p class="caption2">LEBANESE</p>
+                <h4>Tomato sauce, beef mortadella green pepper, olives, fresh mushroom & mozzarella cheese</h4>
+                <h3>Medium: 12$  Large: 13$</h3>
+            </div>
+
+            <div class="image-item2">
+                <img src="images/sujuk.png" alt="supreme">
+                <p class="caption2">SOUJOUK</p>
+                <h4>Tomato sauce, grilled chicken fresh mushroom, green pepper sweet corn & mozzarella cheese</h4>
+                <h3>Medium: 12$  Large: 12$</h3>
+            </div>
+
+            <div class="image-item2">
+                <img src="images/pollo chicken.png" alt="pollo">
+                <p class="caption2">POLLO CHICKEN</p>
+                <h4>Tomato sauce, soujouk, green pepper, cherry tomatoes & mozzarella cheese</h4>
+                <h3>Medium: 13$  Large: 13$</h3>
+            </div>
+        </div>
+        <h2>Order here</h2>
+        <div id="ALLorder">
+        <form action="index.php" method="POST" name="addItemForm" id="addItemForm" enctype="multipart/form-data">          
+            <label for="name">Pizza Name</label>
+            <select id="name" name="name">
+                <option value="" disabled selected>--Select--</option>
+                
+                <option value="CALFREDO">CHICKEN ALFREDO</option>
+                <option value="BBQ">BBQ CHICKEN</option>
+                <option value="SUPREME">SUPREME</option>
+                <option value="TRUFFLE">TRUFFLE</option>
+                <option value="MARGARITA">MARGARITA</option>
+                <option value="PEPPERONI">PEPPERONI</option>
+                <option value="VEGETERIAN">VEGETERIAN</option>
+                <option value="lebanese">LEBANESE</option>
+                <option value="SOUJOUK">SOUJOUK</option>
+                <option value="POLLO">POLLO CHICKEN</option>
+            </select><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="0"><br>
+           
+            <label for="phone">phone:</label>
+            <input type="tel" id="phone" name="phone"><br> 
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter your address"><br>
+
+            <input type="submit" id="submit">
+            <input type="reset" id="reset">
+        </form>
+        <div id="result">
+            <h2>YOUR ORDER: </h2>
+            <dl id="order"></dl>
+        </div>
+        </div>
+        </main>
+
+
+    <footer>
+        <ul>
+            <li>Lebanon's most popular quick service restuarant chain since 1996</li>
+            <li>Qaem</li>
+            <li>71 279 452 - 70 866 538</li>
+            <li>Ras Beirut Near Karakas Pharmacy </li>
+            <li>76 302 077</li>
+            <li>connect with us:<br><a href="https://instagram.com/pizza_secretss" target="_blank">Instagram: @pizza_secretss </a>&nbsp;
+                <a href="https://facebook.com/pizza secret" target="_blank"> Facebook: pizzasecrets
+                </a>
+            </li><hr>
+            <li>copyright 2020-24 All rights reserved.</li>
+        </ul>
+</footer>
+
+<script>
+    const pizzaPrices = {
+        "CHICKEN ALFREDO": 12,
+        "BBQ CHICKEN": 12,
+        "SUPREME": 12,
+        "TRUFFLE": 12,
+        "MARGARITA": 11,
+        "PEPPERONI": 11,
+        "VEGETERIAN": 11,
+        "lebanese": 13,
+        "SOUJOUK": 12,
+        "POLLO CHICKEN": 13,
+    };
+
+    function addItem(name, quantity, phone, location, price) {
+        const dl = document.getElementById("order");
+
+        const dtName = document.createElement("dt");
+        dtName.innerText = ` 🍕 Pizza: ${name}`;
+        const ddQuantity = document.createElement("dd");
+        ddQuantity.innerText = ` 📦 Quantity: ${quantity}`;
+        const ddPhone = document.createElement("dd");
+        ddPhone.innerText = ` 📞 Phone: ${phone}`;
+        const ddLocation = document.createElement("dd");
+        ddLocation.innerText = ` 📍 Location: ${location}`;
+        const ddPrice = document.createElement("dd");
+        ddPrice.innerText = ` 💰 Total Price: $${price}`;
+
+        dl.appendChild(dtName);
+        dl.appendChild(ddQuantity);
+        dl.appendChild(ddPhone);
+        dl.appendChild(ddLocation);
+        dl.appendChild(ddPrice);
+    }
+
+    window.onload = () => {
+        document.getElementById("addItemForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById("name").value;
+            const quantity = document.getElementById("quantity").value;
+            const phone = document.getElementById("phone").value;
+            const location = document.getElementById("location").value;
+
+            if(name == "Enter A Pizza"){
+                alert("🔺Choose the of pizza");
+                return;
+            }
+
+            if(quantity == 0){
+                alert(`🔺how many ${name} pizza do you want`);
+                return;
+            }
+
+            if (!phone || !location) {
+                alert("🔺Please enter both phone number and location!");
+                return;
+            }
+            const pricePerPizza = pizzaPrices[name] || 10;
+            const totalPrice = pricePerPizza * quantity;
+
+            addItem(name, quantity, phone, location, totalPrice);
+
+            alert(`✅ Your order:\n🍕Pizza: ${name}\n📦Quantity: ${quantity}\n📞Phone: ${phone}\n📍Location: ${location}\n💰Total Price: $${totalPrice}`);
+
+            document.getElementById("addItemForm").reset();
+        });
+    };
+</script>
+</body>
+</html>

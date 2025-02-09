@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5e3030;
+}
+header{
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+.navbar ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    display: block;
+    padding:  15px 15px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.navbar li{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: #5e3030;
+    color: rgb(0, 0, 0);
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+.dropdown a{
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: black;
+}
+.dropdown .content{
+    position: absolute;
+    box-shadow: 2px 4px 2px black;
+    display: none;
+    background-color: #5e3030;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: bisque;
+}
+.dropdown a:hover{
+    background-color: #333;
+}
+.gallery{
+    display: flex;
+    padding: 10px;
+    overflow-x: auto;
+}
+.gallery::-webkit-scrollbar {
+    display: none; 
+}
+
+.image{
+    text-align: center;
+    padding:  10px 10px;
+    border: 3px dashed black;
+    margin: 5px;
+}
+.gallery img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+.caption2{
+    color: rgb(32, 27, 12);
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+}
+#price{
+    background-color: #333;
+    color:aliceblue;
+    float: left;
+    padding: 4px;
+}
+h1{
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+}
+footer{
+    background-color: rgb(55, 50, 46);
+    color: #f0ebeaef;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+footer ul{
+    background-color: rgb(55, 50, 46);
+    padding-bottom: 5px;
+}
+footer a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+#addItemForm{
+    border: 2px solid pink;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    margin-left: 100px;
+    width:30%;
+}
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+} 
+input, #name, #type{
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+    display:list-item;
+    margin:7px;
+}
+#submit{
+    color:rgb(12, 12, 12);
+    border-radius: 25px;
+}
+
+#result{
+    background-color: rgb(236, 219, 197);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+    padding:  50px;
+    box-shadow:  2px 4px 6px black;
+}
+
+#order{
+    color:rgb(0, 0, 0);
+    font-size: 20px; 
+}
+#order dt{
+    color:hsl(200, 70%, 43%);
+    font-weight: bold;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#result h2{
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+#order dd{
+    margin: 2px;
+    font-size:  20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+}
+html { scroll-behavior: smooth; }
+h2{
+    font-size: 35px;
+    color:bisque;
+    padding: 10px 30px;
+}
+#ALLorder{
+    display: flex;
+}
